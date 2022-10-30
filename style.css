@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+.container{
+    position: relative;
+    width:100%;
+    height:100vh;
+    background-color:#000;
+    overflow:hidden;
+}
+header{
+    position: relative;
+    padding:35px 0;
+    display: flex;
+    justify-content: space-around;
+    align-items:center;
+}
+.logo a{
+    font-size:20px;
+    font-weight:600;
+    color:#fff;
+    text-transform: capitalize;
+    text-decoration:none;
+}
+.logo a span{
+    color:rgb(25,77,247);
+}
+.menu ul{
+    position: relative;
+    display:flex;
+}
+.menu ul li{
+    list-style:none;
+}
+.menu ul li a{
+    text-decoration:none;
+    font-size:16px;
+    font-weight:600;
+    text-transform: capitalize;
+    color:#fff;
+    margin:0 18px;
+    cursor: pointer;
+    transition:0.7s;
+    position: relative;
+}
+.menu ul li a:hover{
+    color:rgb(25,77,247);
+}
+.menu ul li a::before{
+    position: absolute;
+    content:"";
+    left:0;
+    bottom:0;
+    width:100%;
+    height:2px;
+    background-color:rgb(25,77,247);
+    transition:0.7s;
+    opacity:0;
+}
+.menu ul li a:hover::before{
+    bottom:-8px;
+    opacity:1;
+}
+.btns{
+    position: relative;
+}
+.btns a{
+    font-size:16px;
+    font-weight:600;
+    text-transform: capitalize;
+    color:#fff;
+    padding:14px 35px;
+    background-color:rgb(25,77,247);
+    border-radius:5px;
+    text-decoration:none;
+    cursor: pointer;
+    transition:0.7s;
+    margin:0 5px;
+}
+.btns a:hover{
+    background-color:rgb(12,49,168);
+}
+.btns .btn-01{
+    background-color:transparent;
+    border:1px solid rgb(250, 250, 251);
+    color:rgb(255, 255, 255);
+}
+.btns .btn-01:hover{
+    border:1px solid rgb(12,49,168);
+}
+.content{
+    position: relative;
+    padding:0 100px;
+    top:45px;
+    display:flex;
+}
+.information{
+    position: relative;
+    color:#fff;
+}
+.information h1{
+    font-size:3.5rem;
+    font-weight:900;
+    text-transform: capitalize;
+    color:#fff;
+}
+.information .detils{
+    font-size:20px;
+    padding:12px;
+    color:#fff;
+    line-height:1.5;
+}
+.content-btn{
+    position: relative;
+    top:35px;
+}
+.content-btn a{
+    margin:0 5px;
+}
+.content-btn .btn1{
+    position: relative;
+    padding:15px 35px;
+    font-size:16px;
+    font-weight:600;
+    text-transform: capitalize;
+    text-decoration:none;
+    color:#fff;
+    background-color:rgb(25,77,247);
+    border-radius:25px;
+    cursor: pointer;
+    transition:0.7s;
+}
+.content-btn .btn1:hover{
+    background-color:rgb(12,49,168);
+}
+.content-btn .btn2{
+    font-size:16px;
+    font-weight:600;
+    color:#fff;
+    text-decoration:none;
+    text-transform: capitalize;
+    cursor: pointer;
+    transition:0.7s;
+    opacity:0.6;
+} 
+.content-btn .btn2:hover{
+    opacity:1;
+}
+.content-btn .btn2 i{
+    position: relative;
+    width:45px;
+    height:45px;
+    border:2px solid #fff;
+    border-radius:50%;
+    text-align:center;
+    line-height:45px;
+    margin:0 8px;
+}
+.main-img{
+    position: absolute;
+    right:-16vh;
+    top:-8vh;
+}
+.main-img img{
+    width:70%;
+}
+.brand-img{
+    position: relative;
+    top:11vh;
+    left:25vh;
+    display:flex;
+}
+.brand-img .branBx{
+    position: absolute;
+    width:65px;
+    height:65px;
+    border-radius:50%;
+    background-color:rgb(37,36,36);
+    text-align:center;
+}
+.brand-img .branBx img{
+    width:60%;
+    padding-top:12px;
+}
+.bx-02{
+    position: absolute;
+    left:85px;
+    top:-12vh;
+}
+.bx-03{
+    position: absolute;
+    left:55vh;
+    top:-12vh;
+}
+.bx-04{
+    position: absolute;
+    left:70vh;
+    top:0vh;
+}
+
+
+
+
+
+
+
+
+.brand-img .bx-02 img{
+    width:40%;
+}
+.brand-img .bx-03 img{
+    position: relative;
+    top:8px;
+}
+.brand-img .bx-04 img{
+    width:45%;
+    margin-top:5px;
+}

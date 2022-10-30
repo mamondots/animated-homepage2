@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/910ce80589.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>animated webdesign</title>
+</head>
+<body>
+   <div class="container">
+     <header>
+         <div class="logo">
+             <a href="">mamon<span>dots</span></a>
+         </div>
+         <div class="menu">
+             <ul>
+                 <li><a href="">home</a></li>
+                 <li><a href="">about</a></li>
+                 <li><a href="">services</a></li>
+                 <li><a href="">prizing</a></li>
+                 <li><a href="">contact</a></li>
+             </ul>
+         </div>
+         <div class="btns">
+             <a href="" class="btn-01">sing in</a>
+             <a href="" class="btn-02">get started</a>
+         </div>
+     </header>
+          <div class="content">
+             <div class="information">
+                 <h1>trusted & secure<br> trading crypto<br> wallet</h1>
+                 <p class="detils">
+                     You might wonder why a design would choose<br>
+                     to use Morem text Patagraphs in English or<br>
+                     their native language.
+                 </p>
+                 <div class="content-btn">
+                     <a href="" class="btn1">Get Started</a>
+                     <a href="" class="btn2"><i class="fa-solid fa-play"></i> How it works</a>
+                 </div>
+             </div>
+             <div class="img-sites">
+                 <div class="main-img">
+                     <img src="img/crypto-person.a5a70291.png">
+                 </div>
+                 <div class="brand-img">
+                     <div class="branBx bx-01">
+                        <img src="img/currency1.32b2ce77.svg">
+                     </div>
+
+                     <div class="branBx bx-02">
+                        <img src="img/currency2.55b9dfc7.svg">
+                     </div>
+
+                     <div class="branBx bx-03">
+                        <img src="img/currency3.f3d57acf.svg">
+                     </div>
+
+                     <div class="branBx bx-04">
+                        <img src="img/currency4.1cd8b49c.svg">
+                     </div>
+
+                 </div>
+             </div>
+          </div>
+   </div>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+   <script>
+        let animation = anime({
+            targets:'.logo',
+            translateX:[-40,0],
+            opacity:[0,1],
+            duration:800,
+            easing:'easeInOutSine',
+        });
+
+        anime({
+            targets:'.menu',
+            translateX:[-60,0],
+            opacity:[0,1],
+            duration:800,
+            easing:'easeInOutSine',
+            delay:200,
+        });
+        anime({
+            targets:'.btns',
+            translateX:[-80,0],
+            opacity:[0,1],
+            duration:800,
+            easing:'easeInOutSine',
+            delay:400,
+        });
+        anime({
+            targets:'.information h1',
+            translateX:[-20,0],
+            opacity:[0,1],
+            duration:800,
+            easing:'easeInOutSine',
+            delay:800,
+        });
+        anime({
+            targets:'.information .detils',
+            translateX:[20,0],
+            opacity:[0,1],
+            duration:800,
+            easing:'easeInOutSine',
+            delay:800,
+        });
+
+        anime({
+            targets:'.information .content-btn .btn1',
+            translateX:[-20,0],
+            opacity:[0,1],
+            duration:800,
+            easing:'easeInOutSine',
+            delay:800,
+        });
+
+        anime({
+            targets:'.information .content-btn .btn2',
+            translateX:[20,0],
+            opacity:[0,1],
+            duration:800,
+            easing:'easeInOutSine',
+            delay:800,
+        });
+
+        anime({
+            targets:'.main-img',
+            scale:[1.2,1],
+            opacity:[0,1],
+            duration:800,
+            easing:'easeInOutSine',
+            delay:900,
+        });
+        anime({
+            targets:'.brand-img',
+            translateY:[40,0],
+            opacity:[0,1],
+            duration:800,
+            easing:'easeInOutSine',
+            delay:1000,
+        });
+
+   </script>
+</body>
+</html>
